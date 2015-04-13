@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokerchipsbg22"
+    android:orientation="vertical" >
+
+	<ImageButton
+	    android:id="@+id/buttonhit"
+	    android:layout_width="50dp"
+	    android:layout_height="25dp"
+	    android:layout_above="@+id/seek"
+	    android:layout_alignParentLeft="true"
+	    android:background="@drawable/hitbutton" />
+
+	<ImageButton
+	    android:id="@+id/buttonstay"
+	    android:layout_width="50dp"
+	    android:layout_height="25dp"
+	    android:layout_above="@+id/seek"
+	    android:layout_toRightOf="@+id/buttonhit"
+	    android:background = "@drawable/staybutton" />
+
+	<ImageButton
+	    android:id="@+id/buttondouble"
+	    android:layout_width="50dp"
+	    android:layout_height="25dp"
+	    android:layout_above="@+id/seek"
+	    android:layout_toRightOf="@+id/buttonstay"
+	    android:background="@drawable/doublebutton" />
+	
+	<Button
+	    android:id="@+id/backbutton2"
+	    android:layout_width="50dp"
+	    android:layout_height="25dp"
+	    android:layout_above="@+id/seek"
+	    android:layout_toRightOf="@+id/buttondouble"
+	    android:background="@drawable/realback" />
+ 	    
+	<SeekBar
+	    android:id="@+id/seek"
+	    android:layout_width="320dp"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/progress"
+	    android:layout_alignParentLeft="true"
+	    android:background="@android:color/black"
+	    android:max="100"
+	    android:progress="10"
+	    android:secondaryProgress="75" />
+	
+	<TextView
+	    android:id="@+id/progress"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:textColor="@android:color/white" 
+	    android:background="@android:color/black"/>
+	
+
+    <TextView 
+      android:id="@+id/tracking"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_toRightOf="@+id/progress"
+       />
+
+    <TextView
+        android:id="@+id/textViewThirdScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Dealer"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/yourcards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dealer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Player"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+    
+    <!--  All the card images -->
+    
+    <ImageView
+        android:id="@+id/dealer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThirdScreen"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cardback"
+        />
+
+    <ImageView
+        android:id="@+id/dealer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThirdScreen"
+        android:layout_toRightOf="@+id/dealer1"
+        android:src="@drawable/cardback" />
+    
+    <ImageView
+        android:id="@+id/dealer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThirdScreen"
+        android:layout_toRightOf="@+id/dealer2"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+    
+    <ImageView
+        android:id="@+id/dealer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThirdScreen"
+        android:layout_toRightOf="@+id/dealer3"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+    
+    <ImageView
+        android:id="@+id/dealer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewThirdScreen"
+        android:layout_toRightOf="@+id/dealer4"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+    
+    
+    
+     <ImageView
+        android:id="@+id/you1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourcards"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cardback"
+        />
+     
+         <ImageView
+        android:id="@+id/you2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourcards"
+        android:layout_toRightOf="@+id/you1"
+        android:src="@drawable/cardback" />
+         
+         <ImageView
+        android:id="@+id/you3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourcards"
+        android:layout_toRightOf="@+id/you2"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+         
+         <ImageView
+        android:id="@+id/you4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourcards"
+        android:layout_toRightOf="@+id/you3"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+         
+         <ImageView
+        android:id="@+id/you5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourcards"
+        android:layout_toRightOf="@+id/you4"
+        android:src="@drawable/cardback"
+        android:visibility="invisible" />
+
+     <Button
+         android:id="@+id/betbutton"
+         android:layout_width="65dp"
+         android:layout_height="40dp"
+         android:layout_above="@+id/seek"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="21dp"
+         android:background="@drawable/betbutton1" />
+
+</RelativeLayout>

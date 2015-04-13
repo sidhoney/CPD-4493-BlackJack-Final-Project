@@ -22,6 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Screentwo"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name=".Screenthree"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name=".WinScreenScreen"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name=".Lost"
+            android:label="@string/app_name" >
+            </activity>
     </application>
 
 </manifest>

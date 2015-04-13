@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pokerchipsbg23"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/disclaimer"
+        android:text="\n\n\n\nThe object of the blackjack game is to accumulate cards with point totals as close to 21 without going over 21. Face cards (Jacks, Queens and Kings) are worth 10 points. Aces are worth 1 or 11, whichever is preferable. Other cards are represented by their number.
+					\n\nIf player and the House tie, it is a push and no one wins. Ace and 10 (Blackjack) on the first two cards dealt is an automatic player win at 1.5 to 1, unless the house ties. A player may stand at any time. 
+					\n\nTo win you need to beat the dealer without busting. You bust when your cards total to more than 21 and you lose automatically. The winner is whoever has closest to a total of 21. You reach 21 by adding up the values of the cards." />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/realback" />
+
+ </RelativeLayout>
